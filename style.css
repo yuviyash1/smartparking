@@ -1,12 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-height: 80vh;
     background-color: #f4f4f4;
 }
+.status-header {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 20px;
+}
 .parking-lot {
     display: flex;
+    flex-wrap: wrap; /* Allows spots to wrap on small screens */
+    justify-content: center;
     gap: 20px;
 }
 .parking-spot {
@@ -19,14 +28,19 @@ body {
     font-size: 20px;
     font-weight: bold;
     transition: all 0.3s ease;
+    background-color: #ccc; /* Default 'loading' color */
+    color: #555;
 }
 
-/* These classes will be added by JavaScript */
-.vacant {
-    background-color: #4CAF50; /* Green */
+.status-box {
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
     color: white;
 }
-.occupied {
-    background-color: #f44336; /* Red */
-    color: white;
-}
+
+/* Dynamic Classes */
+.vacant { background-color: #4CAF50; color: white; }
+.occupied { background-color: #f44336; color: white; }
+.open { background-color: #4CAF50; }
+.closed { background-color: #f44336; }
