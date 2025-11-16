@@ -3,13 +3,14 @@
 // Scroll down to "Your apps" and click the Web icon (</>)
 // Follow the steps and copy the config object here
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  databaseURL: "https://your-project-name-default-rtdb.firebaseio.com", // From Step 1
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyD2HQfc1ZCBnxYxy7dhEMvpZpv__dE3ucg",
+  authDomain: "smart-parking-5f9a2.firebaseapp.com",
+  databaseURL: "https://smart-parking-5f9a2-default-rtdb.firebaseio.com",
+  projectId: "smart-parking-5f9a2",
+  storageBucket: "smart-parking-5f9a2.firebasestorage.app",
+  messagingSenderId: "618928851378",
+  appId: "1:618928851378:web:a85691d3f0f6a0f11bbcab",
+  measurementId: "G-2SEYB76K1R"
 };
 
 // Initialize Firebase
