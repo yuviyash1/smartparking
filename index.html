@@ -8,11 +8,18 @@
 </head>
 <body>
     <h1>Live Parking Status</h1>
+    
+    <div class="status-header">
+        <h2>Vacant Spots: <span id="vacant-count">...</span></h2>
+        <h2>Gate Status: <span id="gate-status" class="status-box">...</span></h2>
+    </div>
+
     <div class="parking-lot">
-        <div id="spot_1" class="parking-spot">
-            P-01
-        </div>
-        </div>
+        <div id="spot_1" class="parking-spot">P-01</div>
+        <div id="spot_2" class="parking-spot">P-02</div>
+        <div id="spot_3" class="parking-spot">P-03</div>
+        <div id="spot_4" class="parking-spot">P-04</div>
+    </div>
 
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
